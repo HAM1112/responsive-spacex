@@ -3,21 +3,74 @@
     margin:  0;
 }
 
-
 body{
-    background-color: #000;
+    background-color: #515A5A;
     color: #fff;
     overflow-x: hidden;
 }
 
 nav .nav-item a{
     color: #fff;
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 2px;
+    font-weight: 650;
+}
+
+nav .nav-item a:hover{
+    color: #515A5A;
+}
+
+#navbar {
+    transition: opacity 0.3s ease;
+}
+
+.navbar-fade {
+    opacity: 0;
+    
+}
+
+.offcanvas-size-md {
+    --bs-offcanvas-width: min(95vw, 350px) !important;
+    padding-right: 30px;
+    background: #000;
+}
+
+.offcanvas-size-md > li{
+    border: 2px solid #fff;
+    background-color: aqua;
+}
+.single-div{
+    height: 100vh;
+    background-size: cover;   
+    background-position: center;
+}
+.inside-div{
+    margin-left: 80px;
+    margin-bottom: 150px;
+    transition: 0.3s;
+    max-width: 450px;
+    border: 2px solid green;
+}
+.inside-div h1{
     font-weight: 700;
+    line-height: 38px;
+}
+@media (max-width: 900px){
+    .inside-div{
+        margin-left: 8px;
+    }
+}
+.main-button{
+    padding: 12px 40px;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: x-small;
 }
 
-nav{
-    width: 100%;
+.footer-div{
+    font-size: 11px;
+    background-color: #000;
 }
-
+.footer-div > div{
+    margin: 10px 0px;
+}
